@@ -2,6 +2,7 @@ var fs = require('fs'),
     path = require('path'),
     vow = require('vow'),
     Level = require('../lib/levels/level'),
+    levelScanner = require('../lib/levels/level-scanner'),
 
     fixturesDirname = path.resolve(__dirname, 'fixtures'),
     libsDirname = path.join(fixturesDirname, 'libs'),
@@ -21,15 +22,51 @@ suite('scan levels', function () {
         })).then(done, done);
     });
 
+    bench('`bem-bl`', function (done) {
+        vow.all(bl.map(function (level) {
+            var defer = vow.defer();
+
+            levelScanner.scan(level, function (err, entities) {
+                defer.resolve(entities)
+            });
+
+            return defer.promise();
+        })).then(done, done);
+    });
+
     bench('`bem-core` + `bem-components`', function (done) {
         vow.all(core.map(function (level) {
             return (new Level(level)).load();
         })).then(done, done);
     });
 
+    bench('`bem-core` + `bem-components`', function (done) {
+        vow.all(bl.map(function (level) {
+            var defer = vow.defer();
+
+            levelScanner.scan(level, function (err, entities) {
+                defer.resolve(entities)
+            });
+
+            return defer.promise();
+        })).then(done, done);
+    });
+
     bench('`bem-bl` + `bem-core` + `bem-components`', function (done) {
         vow.all(all.map(function (level) {
             return (new Level(level)).load();
+        })).then(done, done);
+    });
+
+    bench('`bem-bl` + `bem-core` + `bem-components`', function (done) {
+        vow.all(all.map(function (level) {
+            var defer = vow.defer();
+
+            levelScanner.scan(level, function (err, entities) {
+                defer.resolve(entities)
+            });
+
+            return defer.promise();
         })).then(done, done);
     });
 });
