@@ -3,7 +3,7 @@ enb-bem
 
 [![NPM version](http://img.shields.io/npm/v/enb-bem.svg?style=flat)](http://www.npmjs.org/package/enb-bem) [![Build Status](http://img.shields.io/travis/enb-bem/enb-bem/master.svg?style=flat)](https://travis-ci.org/enb-bem/enb-bem) [![Coverage Status](https://img.shields.io/coveralls/enb-bem/enb-bem.svg?style=flat)](https://coveralls.io/r/enb-bem/enb-bem?branch=master) [![Dependency Status](http://img.shields.io/david/enb-bem/enb-bem.svg?style=flat)](https://david-dm.org/enb-bem/enb-bem)
 
-Пакет предоставляет набор [ENB](http://enb-make.info/)-технологий для сборки проектов, в основе которых лежит [БЭМ](http://bem.info/) методология.
+Пакет предоставляет набор модулей-технологий для сборки проектов с помощью [ENB](http://enb-make.info/), в основе которых лежит [БЭМ](http://bem.info/) методология.
 
 Установка
 ---------
@@ -12,7 +12,7 @@ enb-bem
 $ npm install --save-dev enb-bem
 ```
 
-Для работы модуля требуется зависимость от пакета enb версии `0.13.0` или выше.
+Для работы модуля требуется зависимость от пакета `enb` версии `0.13.0` или выше.
 
 БЭМ-проект прямо сейчас <s>без регистрации и смс</s>
 ----------------------------------------------------
@@ -25,9 +25,10 @@ $ npm install --save-dev enb-bem
 
 Документация
 ------------
-* [Форматы описания зависимостей для БЭМ-сущностей](#docs/deps-formats.md).
-* [Сборка бандла на основе базовой декларации БЭМ-сущностей](#docs/build-bundle-by-bemdecl.md).
-* [Сборка html-страницы по bemjson-файлу](#docs/build-html-by-bemjson.md).
+* [Форматы описания зависимостей между БЭМ-сущностями](#docs/deps.md).
+* [Форматы описания деклараций БЭМ-сущностей](#docs/decls.md).
+* [Сборка бандла на основе декларации БЭМ-сущностей](#docs/bundle-by-bemdecl.md).
+* [Сборка html-страницы по bemjson-файлу](#docs/html-by-bemjson.md).
 * [Создание merged и common бандлов](#docs/merged-and-common-bundle.md).
 
 Технологии
