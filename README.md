@@ -19,7 +19,7 @@ $ npm install --save-dev enb-bem
 
 Посмотреть&nbsp;на [ENB-конфиг](https://github.com/bem/project-stub/blob/bem-core/.enb/make.js) с&nbsp;БЭМ-технологиями в&nbsp;действии,
 а&nbsp;также опробовать сборку и&nbsp;разрабочичий сервер можно на&nbsp;примере шаблонного репозитория [`project-stub`](https://github.com/bem/project-stub),
-который содержит в&nbsp;себе базовые конфигурации для сборки страниц с&nbsp;помощью [`bem-core`](https://github.com/bem/bem-core) и&nbsp;[`bem-components`](https://github.com/bem/bem-components)&nbsp;библиотек.
+который содержит в&nbsp;себе базовые конфигурации для сборки страниц с&nbsp;помощью [`bem-core`](https://github.com/bem/bem-core) и&nbsp;<nobr>[`bem-components`](https://github.com/bem/bem-components)</nobr>&nbsp;библиотек.
 
 Для того, чтобы создать уже настроенный для сборки БЭМ-проект, подходящий под ваши задачи, можно ответить на&nbsp;вопросы [генератора БЭМ-проектов](https://github.com/bem/generator-bem-stub), написанного&nbsp;на [Yeoman](http://yeoman.io/).
 
