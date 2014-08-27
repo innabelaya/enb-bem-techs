@@ -3,7 +3,7 @@ enb-bem
 
 [![NPM version](http://img.shields.io/npm/v/enb-bem.svg?style=flat)](http://www.npmjs.org/package/enb-bem) [![Build Status](http://img.shields.io/travis/enb-bem/enb-bem/master.svg?style=flat)](https://travis-ci.org/enb-bem/enb-bem) [![Coverage Status](https://img.shields.io/coveralls/enb-bem/enb-bem.svg?style=flat)](https://coveralls.io/r/enb-bem/enb-bem?branch=master) [![Dependency Status](http://img.shields.io/david/enb-bem/enb-bem.svg?style=flat)](https://david-dm.org/enb-bem/enb-bem)
 
-Пакет предоставляет набор модулей-технологий для сборки проектов с помощью [ENB](http://enb-make.info/), в основе которых лежит [БЭМ](http://bem.info/) методология.
+Пакет предоставляет набор модулей-технологий для сборки [БЭМ](http://bem.info/)-проектов с помощью [ENB](http://enb-make.info/).
 
 Установка
 ---------
@@ -14,8 +14,8 @@ $ npm install --save-dev enb-bem
 
 Для работы модуля требуется зависимость от пакета `enb` версии `0.13.0` или выше.
 
-БЭМ-проект прямо сейчас <s>без регистрации и смс</s>
-----------------------------------------------------
+С чего начать?
+--------------
 
 Посмотреть на [ENB-конфиг](https://github.com/bem/project-stub/blob/bem-core/.enb/make.js) с БЭМ-технологиями в действии,
 а также опробовать сборку и разрабочичий сервер можно на примере шаблонного репозитория [`project-stub`](https://github.com/bem/project-stub),
