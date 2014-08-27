@@ -3,7 +3,7 @@ enb-bem
 
 [![NPM version](http://img.shields.io/npm/v/enb-bem.svg?style=flat)](http://www.npmjs.org/package/enb-bem) [![Build Status](http://img.shields.io/travis/enb-bem/enb-bem/master.svg?style=flat)](https://travis-ci.org/enb-bem/enb-bem) [![Coverage Status](https://img.shields.io/coveralls/enb-bem/enb-bem.svg?style=flat)](https://coveralls.io/r/enb-bem/enb-bem?branch=master) [![Dependency Status](http://img.shields.io/david/enb-bem/enb-bem.svg?style=flat)](https://david-dm.org/enb-bem/enb-bem)
 
-Пакет предоставляет набор модулей-технологий для сборки [БЭМ](http://bem.info/)-проектов с помощью [ENB](http://enb-make.info/).
+Пакет предоставляет набор модулей-технологий для сборки [БЭМ](http://bem.info/)-проектов с&nbsp;помощью [ENB](http://enb-make.info/).
 
 Установка
 ---------
@@ -12,24 +12,24 @@ enb-bem
 $ npm install --save-dev enb-bem
 ```
 
-Для работы модуля требуется зависимость от пакета `enb` версии `0.13.0` или выше.
+Для работы модуля требуется зависимость от&nbsp;пакета `enb` версии `0.13.0` или выше.
 
 С чего начать?
 --------------
 
-Посмотреть на [ENB-конфиг](https://github.com/bem/project-stub/blob/bem-core/.enb/make.js) с БЭМ-технологиями в действии,
-а также опробовать сборку и разрабочичий сервер можно на примере шаблонного репозитория [`project-stub`](https://github.com/bem/project-stub),
-который содержит в себе базовые конфигурации для сборки страниц с помощью [`bem-core`](https://github.com/bem/bem-core) и [`bem-components`](https://github.com/bem/bem-components) библиотек.
+Посмотреть&nbsp;на [ENB-конфиг](https://github.com/bem/project-stub/blob/bem-core/.enb/make.js) с&nbsp;БЭМ-технологиями в&nbsp;действии,
+а&nbsp;также опробовать сборку и&nbsp;разрабочичий сервер можно на&nbsp;примере шаблонного репозитория [`project-stub`](https://github.com/bem/project-stub),
+который содержит в&nbsp;себе базовые конфигурации для сборки страниц с&nbsp;помощью [`bem-core`](https://github.com/bem/bem-core) и [`bem-components`](https://github.com/bem/bem-components) библиотек.
 
-Для того, чтобы создать уже настроенный для сборки БЭМ-проект, подходящий под ваши задачи, можно ответить на вопросы [генератора БЭМ-проектов](https://github.com/bem/generator-bem-stub) на [Yeoman](http://yeoman.io/).
+Для того, чтобы создать уже настроенный для сборки БЭМ-проект, подходящий под ваши задачи, можно ответить на&nbsp;вопросы [генератора БЭМ-проектов](https://github.com/bem/generator-bem-stub), написанного&nbsp;на [Yeoman](http://yeoman.io/).
 
 Документация
 ------------
-* [Форматы описания зависимостей между БЭМ-сущностями](#docs/deps.md).
-* [Форматы описания деклараций БЭМ-сущностей](#docs/decls.md).
-* [Сборка бандла на основе декларации БЭМ-сущностей](#docs/bundle-by-bemdecl.md).
-* [Сборка html-страницы по bemjson-файлу](#docs/html-by-bemjson.md).
-* [Создание merged и common бандлов](#docs/merged-and-common-bundle.md).
+* [Форматы описания зависимостей между БЭМ-сущностями](docs/deps.md).
+* [Форматы описания деклараций БЭМ-сущностей](docs/decls.md).
+* [Сборка бандла на основе декларации БЭМ-сущностей](docs/bundle-by-bemdecl.md).
+* [Сборка html-страницы по bemjson-файлу](docs/html-by-bemjson.md).
+* [Создание merged и common бандлов](docs/merged-and-common-bundle.md).
 
 Технологии
 ----------
