@@ -74,10 +74,10 @@ src/
 С чего начать?
 --------------
 
-Воспользуйтесь [инструкцией по установке `project-stub`](https://github.com/bem/project-stub/blob/bem-core/README.ru.md)
+Воспользуйтесь [инструкцией по установке Project Stub](https://github.com/bem/project-stub/blob/bem-core/README.ru.md),
 чтобы создать БЭМ проект, настроенный для сборки с помощью ENB.
 
-Для того, чтобы создать проект, подходящий под ваши задачи — ответьте на&nbsp;вопросы [генератора БЭМ-проектов](https://github.com/bem/generator-bem-stub), основанного&nbsp;на [Yeoman](http://yeoman.io/).
+Для создания проекта, подходящего под ваши задачи — ответьте на&nbsp;вопросы [генератора БЭМ-проектов](https://github.com/bem/generator-bem-stub), основанного&nbsp;на [Yeoman](http://yeoman.io/).
 
 Документация
 ------------
