@@ -3,7 +3,7 @@ enb-bem
 
 [![NPM version](http://img.shields.io/npm/v/enb-bem.svg?style=flat)](http://www.npmjs.org/package/enb-bem) [![Build Status](http://img.shields.io/travis/enb-bem/enb-bem/master.svg?style=flat)](https://travis-ci.org/enb-bem/enb-bem) [![Coverage Status](https://img.shields.io/coveralls/enb-bem/enb-bem.svg?style=flat)](https://coveralls.io/r/enb-bem/enb-bem?branch=master) [![Dependency Status](http://img.shields.io/david/enb-bem/enb-bem.svg?style=flat)](https://david-dm.org/enb-bem/enb-bem)
 
-Пакет предоставляет набор модулей-технологий для сборки [БЭМ](http://bem.info/)-проектов с&nbsp;помощью [ENB](http://enb-make.info/).
+Пакет предоставляет набор [ENB](http://enb-make.info/)-технологий для сборки [БЭМ](http://bem.info/)-проектов.
 
 Установка
 ---------
@@ -13,6 +13,55 @@ $ npm install --save-dev enb-bem
 ```
 
 Для работы модуля требуется зависимость от&nbsp;пакета `enb` версии `0.13.0` или выше.
+
+Как устроены БЭМ проекты?
+-------------------------
+
+БЭМ методология предпологает разделение интерфейса на независимые компоненты — блоки.
+
+blocks/
+├── head/
+├── footer/
+├── logo/
+├── button/
+└── link/
+
+Каждый блок может быть реализован в одной или нескольких технологиях.
+
+button/
+├── button.css
+└── button.js
+
+Если в блоках есть элементы или модификаторы, которые используются не всегда — их реализация выносится в отдельные файлы.
+
+button/
+├── __text
+│   ├── button__text.css
+│   └── button__text.js
+├── _focused
+│   ├── button_focused.css
+│   └── button_focused.js
+├── _type
+│   ├── button_type_link.css
+│   └── button_type_link.js
+├── button.css
+└── button.js
+
+В проекте может быть несколько уровней с блоками, например для разделения кода по платформам.
+
+src/
+├── common.blocks/
+│    └── button/
+│    ...
+├── desktop.blocks/
+└── touch.blocks/
+
+Примеры из жизни:
+
+* [bem-core](https://github.com/bem/bem-core)
+* [bem-components](https://github.com/bem/bem-components)
+
+Подробнее об организации БЭМ проектов на файловой системе читайте в разделе «[методология](http://ru.bem.info/method/filesystem/)» на сайте [bem.info](http://ru.bem.info/).
 
 С чего начать?
 --------------
